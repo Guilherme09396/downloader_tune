@@ -1,5 +1,6 @@
 const ytDlp = require("yt-dlp-exec").default;
 const path = require("path");
+console.log("testando")
 
 async function downloadMusic(url) {
   const output = path.join(__dirname, "../downloads/%(title)s.%(ext)s");

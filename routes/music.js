@@ -130,7 +130,12 @@ router.post("/search", async (req, res) => {
     const results = await ytDlp(`ytsearch5:${query}`, {
       dumpSingleJson: true,
       noWarnings: true,
-      noCallHome: true,
+
+      extractorArgs: "youtube:player_client=android",
+
+      addHeader: [
+        "user-agent: Mozilla/5.0 (Linux; Android 10)",
+      ],
     });
 
     const tracks = results.entries.map((item) => ({

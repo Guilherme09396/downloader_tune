@@ -1,4 +1,4 @@
-const ytDlp = require("yt-dlp-exec").create("/usr/local/bin/yt-dlp");
+const ytDlp = require("yt-dlp-exec").default;
 const path = require("path");
 
 async function downloadMusic(url) {

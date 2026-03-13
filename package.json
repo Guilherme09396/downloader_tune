@@ -17,5 +17,8 @@
         "express": "^5.2.1",
         "yt-dlp-exec": "^1.0.2",
         "yt-search": "^2.13.1"
+    },
+    "engines": {
+        "node": "20.x"
     }
 }
